@@ -55,6 +55,7 @@ showMessage = (msg) => {
     `;
     document.getElementById("rightbar").appendChild(div);
 };
+
 showmessage = (msg) => {
     // console.log("this is running... 123");
     const div = document.createElement("div");
@@ -66,7 +67,7 @@ showmessage = (msg) => {
         <p class="preview_title">${msg.text.title}</p>
         <p>${msg.text.description}</p> <br/>
         <p><img class="image_preview" src=${msg.text.image}></p> <br/>
-        <p><a href="${msg.text.url}">${msg.text.url}</a></p>
+        <p><a href="${msg.text.url}" target="_blank">${msg.text.url}</a></p>
     </section>
     `;
     document.getElementById("rightbar").appendChild(div);
