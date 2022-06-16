@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("chat.PNG");
+    background-size: 100px;
+   
+}
+
+.container{
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    padding: 1vw;  
+    margin: 17vh 0;
+    
+    width: 40%;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    transform: translate(15%, -10%);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.mainbox{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    margin-top: 5vh;
+}
+input, select{
+    padding: 0.6vw;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid black;
+}
+select{
+    width: 100%;
+}
+.join{
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+.one{
+    width: 80%;
+    padding: 1vw;
+    border-radius: 6px;
+    /* color: #5187E1; */
+
+    font-weight: 700;
+    /* background-color: #c7c6ed; */
+}

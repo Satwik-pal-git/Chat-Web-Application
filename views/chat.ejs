@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style/chat.css">
+    <title>Gossip</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <img class="chat-gossip"
+                src="https://w7.pngwing.com/pngs/495/972/png-transparent-technische-hochschule-koln-person-le-plan-de-campagne-grace-life-church-speech-gossip-text-trademark-logo.png"
+                alt="GOSSIP">
+            <img class="setting_icon" src="./style/settings.png" alt="">
+        </div>
+        <div class="content">
+            <div class="leftbar">
+                <!-- users and room will be populated dynamically -->
+                <div class="room_name">
+
+                </div>
+                <div class="users">
+
+                </div>
+            </div>
+            <div class="rightbar" id="rightbar">
+                <!-- chats will be added dynamically -->
+                <!-- <div class="messages" id="messages">
+                    <p class="person_name">Name <span>--:--</span></p>
+                    <section>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem laborum modi molestiae
+                            pariatur provident ex nam laudantium perferendis maiores officiis!</p>
+                    </section>
+                </div> -->
+            </div>
+        </div>
+        <div class="newmsg">
+            <form action="" id="Chat_form">
+                <input type="text" name="messg" id="messg" placeholder="Type your message...">
+                <button>send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@1,400;1,700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topbar{
+    padding: 1vw;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap !important;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+.chat-gossip{
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    font-family: 'Gentium Plus', serif;
+font-family: 'Press Start 2P', cursive;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.setting_icon{
+  position: relative;
+  left: 40vw;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.setting_icon:hover .leaveRoom{
+    display: block !important;
+    margin-right: 4vw;
+}
+.setting_icon i{
+    width: 1.5vw ;
+    height: 1.5vw ;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    height: 82vh;
+    overflow: scroll;
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+.leftbar{
+    /* position: sticky; ------------------------------------------------------------*/ 
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.leftbar::-webkit-scrollbar {
+    display: none;
+}
+.rightbar{
+    flex: 5;    
+}
+.newmsg{
+    display: flex;
+    flex-direction: reverse;
+    justify-content: flex-end;
+    height: 6vh;
+    margin: 1vh;
+}
+.newmsg input{
+    position: sticky;
+    padding: 1vh;
+    order: 1;
+    width: 67vw;
+    margin-right: 2vw;
+}
+.newmsg button{
+    position: sticky;
+    order: 2;
+    padding: 1vh;
+    width: 10vw;
+    margin-right: 1vw;
+}
+.newmsg p{
+    text-align: left;
+    margin-right: 5vw;
+    margin-top: 1.5vh;
+}
+.messages{
+    width: 80%;
+    background-color: rgba(193, 198, 198, 0.354);
+    margin: 1vw;
+    padding: 1vw;
+    padding-left: 2vw;
+    border-radius: 10px;
+}
+.person_name{
+    font-family: 'Gentium Plus', serif;
+    font-size: smaller !important;
+    inline-size: 200px;
+}
+.person_name span{
+   margin-left: 2vw;
+   /* font-size: smaller; */
+}
+.messages section{
+    word-break: break-all; 
+}
+.leftbar{
+    padding: 1vw;
+    background-color: rgba(213, 220, 220, 0.463);
+    border-radius: 7px;
+    margin-left: 1vw;
+}
+.room_name{
+    padding: 1vh;
+    padding-left: 4vh;
+}
+.users{
+    padding: 1vh;
+    /* background-color: rgba(212, 210, 210, 0.411); */
+    margin-top: 2vh;
+    padding-left: 4vh;
+}
+.leftbar li{
+    list-style: none;
+    margin-bottom: 1.5vh;
+}
+.image_preview{
+    width: 20vw;
+    border-radius: 5px;
+    height: auto;
+}
+.preview_title{
+    font-weight: bold;
+    /* margin-left: 1vw; */
+    color: rgb(78, 78, 73);
+}

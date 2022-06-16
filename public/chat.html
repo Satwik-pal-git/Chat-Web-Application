@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style/chat.css">
+    <title>Gossip</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <!-- <img class="chat-gossip"
+                src="https://w7.pngwing.com/pngs/495/972/png-transparent-technische-hochschule-koln-person-le-plan-de-campagne-grace-life-church-speech-gossip-text-trademark-logo.png"
+                alt="GOSSIP"> -->
+            <p class="chat-gossip">Goosip</p>
+            <!-- <img class="setting_icon" src="./style/settings.png" alt=""> -->
+            <div class="setting_icon" id="setting_icon">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <div class="leaveRoom" style="display:none">Leave Room</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="leftbar">
+                <!-- users and room will be populated dynamically -->
+                <div class="room_name">
+                    <h3>Rooms: </h3> <br>
+                    <div id="room_name"></div>
+                </div>
+                <div class="users">
+                    <h3>Users: </h3> <br>
+                    <ul>
+                        <div id="users"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightbar" id="rightbar">
+                <!-- chats will be added dynamically -->
+                <!-- <div class="messages" id="messages">
+                    <p class="person_name">${msg.username} <span>${msg.time}</span></p>
+                    <section>
+                        <p>${msg.text.title}</p>
+                        <p>${msg.text.description}</p>
+                        <p><img class="image_preview"
+                                src="https://lh5.googleusercontent.com/uDQ7V4jDlNCc3MztKdeZTPTzXvNzyNzI8tO8ggemijQMqqwBmr7lAv0iH2d77fKeBJ0=w1200-h630-p"
+                                alt=""></p>
+                        <p>${msg.text.url}</p>
+                    </section>
+                </div> -->
+            </div>
+        </div>
+        <div class="newmsg">
+            <p>Made by Satwik Pal</p>
+            <form action="" id="Chat_form">
+                <input type="text" name="messg" id="messg" placeholder="Type your message...">
+                <button>send</button>
+            </form>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+const router = require("express").Router();
+const path = require("path");
+
+router.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/landing.html"));
+});
+var Req;
+router.post("/", (req, res) => {
+    // console.log(req.body);
+    Req = req.body;
+    printing_userDetails(Req);
+    res.redirect("/chat");
+});
+router.get("/chat", (req, res) => {
+    res.render("chat");
+})
+printing_userDetails = async (Reqs) => {
+    console.log("running....");
+    return { User_details: Reqs };
+}
+// exports.printing = printing_userDetails;
+
+exports.Router = router;
