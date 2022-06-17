@@ -1,4 +1,5 @@
-const socket = io("http://localhost:3000/");
+var url = "https://chat-web-application-task.herokuapp.com/" || "http://localhost:3000/";
+const socket = io(url);
 const chat_msg = document.querySelector(".rightbar");
 
 var url_string = window.location.href; // www.test.com?filename=test

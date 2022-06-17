@@ -8,6 +8,7 @@ const { Socket } = require("dgram");
 const formatMessage = require("./utils/messages_format");
 const { userJoin, getCurrentUser, userLeave, getRoomsUser } = require("./utils/users");
 const { SocketAddress } = require("net");
+const cors = require("cors");
 // const previewmesg = require("./utils/preview");
 const fetch = require("cross-fetch");
 const dotenv = require("dotenv");
@@ -15,6 +16,7 @@ const pth = __dirname;
 dotenv.config({ path: path.join(pth, '.env') });
 const key = process.env.link_key;
 
+app.use(cors());
 app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
