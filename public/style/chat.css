@@ -101,7 +101,7 @@ overflow-y: hidden;
 .person_name{
     font-family: 'Gentium Plus', serif;
     font-size: smaller !important;
-    inline-size: 200px;
+    inline-size: flex;
 }
 .person_name span{
    margin-left: 2vw;

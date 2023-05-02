@@ -1,4 +1,4 @@
-var url = "https://chat-web-application-task.herokuapp.com/" || "http://localhost:3000/";
+var url = "http://localhost:3000/";
 const socket = io(url);
 const chat_msg = document.querySelector(".rightbar");
 
@@ -20,6 +20,7 @@ socket.emit("JoinRooms", User_details);
 socket.on("message", mssg => {
     // console.log("checking", mssg.text);
     if (mssg.text.description === undefined) {
+        console.log(mssg);
         showMessage(mssg);
     }
     else {
@@ -35,7 +36,7 @@ document.getElementById("Chat_form").addEventListener("submit", (e) => {
     const newMsg = document.getElementById("messg").value;
     document.getElementById("messg").value = "";
     document.getElementById("messg").focus();
-    // console.log(newMsg); 
+    // console.log(newMsg);
     socket.emit("NewMessage_2server", newMsg);
 });
 

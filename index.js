@@ -89,6 +89,8 @@ io.on("connection", socket => {
 
     socket.on("NewMessage_2server", async (msg) => {
         const curuser = getCurrentUser(socket.id);
+        // console.log(curuser);
+        // console.log(msg);
         var prefix_link = `http://api.linkpreview.net/?key=${key}&q=${msg}`;
         fetch(prefix_link).then(res => res.json()).then(data => {
             if (data.title.length === 0) {
